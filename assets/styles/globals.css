@@ -1,0 +1,531 @@
+@font-face {
+  font-family: "Principal";
+  src: url("../fonts/RIKY2vamp.ttf") format("truetype");
+}
+
+/*Estilos Globales*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  background-color: #1e1e1e;
+  scroll-margin-top: 200px;
+  background-image: url("../images/bg4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Gill Sans", sans-serif;
+  color: #919191;
+}
+
+/*Estilos de la página*/
+body {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+}
+
+/* Estilos del barra de navegacion
+nav {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 20px 10px 20px;
+  margin: 0;
+  gap: 20px;
+
+  border-bottom: #4b4b4b 5px solid;
+  z-index: 10;
+}
+
+/*Contenedor de los botones de navegacion*/
+/* .contentButtonNav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/*Estilos del Titulo de la barra de navegacion*/
+/* .titleHead {
+  color: #7a0b0b;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: overline underline #6401014f 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Principal", sans-serif;
+} */
+
+/* Estilos del barra de navegacion */
+nav {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 20px 10px 20px;
+  margin: 0;
+  gap: 20px;
+  border-bottom: #4b4b4b 5px solid;
+  z-index: 10;
+}
+
+/* Contenedor de los botones de navegacion */
+.contentButtonNav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos del Titulo de la barra de navegacion */
+.titleHead {
+  color: #7a0b0b;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: overline underline #6401014f 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Principal", sans-serif;
+}
+
+/* Estilos del botón del menú desplegable */
+.mobile-menu-btn {
+  display: none;
+}
+
+/* Estilos del menú desplegable */
+.mobile-menu {
+  display: none;
+}
+
+/* Media query para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+  /* Ocultar botones de navegación */
+  .contentButtonNav {
+    display: none;
+  }
+
+  /* Mostrar botón del menú desplegable */
+  .mobile-menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Mostrar menú desplegable */
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/*Estilos de el contenedor central de la pagina*/
+
+main {
+  width: 80%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+span {
+  text-align: justify;
+}
+
+/*Estilos de los botones de navegacion*/
+.btnTopBar {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  background: #101010;
+  box-shadow: 0px 2px 10px 2px #ffffff2a;
+}
+
+.btnTopBar:hover {
+  background-color: #ffffff94;
+  box-shadow: 0px 2px 10px 2px #0000002a;
+  color: #1a1919;
+  transition: 0.4s ease-in-out;
+}
+
+.btnTopBar:active {
+  background-color: #ffffff2a;
+  color: #f2f2f2;
+}
+
+.btnTopBar::selection {
+  background-color: transparent;
+}
+
+/*Estilos de la imagen en la barra de navegacion*/
+.imgTopBar {
+  height: 75px;
+}
+/*Estilos del texto de la pagina*/
+.txtContentPage {
+  font-size: 1.2rem;
+  z-index: 10;
+  line-height: 1.5rem;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/**********  Index Page  **********/
+
+/*Estilos de la etiqueta strong de la pagina Home*/
+strong {
+  color: #8f0101;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: "Principal", sans-serif;
+  background: none;
+}
+
+/*Estilos de contenedor de la pagina Home a 2 columnas*/
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/*Estilos de contenedor de la pagina Home columna Izquierda*/
+.leftSection {
+  background-color: transparent;
+}
+
+/*Estilos de contenedor de la pagina Home columna Derecha*/
+.rightSection {
+  background-color: transparent;
+}
+
+/*Estilos de la imagen de la pagina Home*/
+.imgHeadIndex {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+  object-fit: cover;
+}
+
+/**********  Place Page  **********/
+
+/*Contenedor de las imagenes pagina Place*/
+.imgPlaceBD {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+/*Estilos de las imagenes de la pagina Place*/
+.imgPlaceBD img {
+  height: 270px;
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/*Estilos de la etiqueta "a" de la pagina Place*/
+.linkTo {
+  text-decoration: none;
+  color: rgb(211, 0, 70);
+}
+
+/* Estilos del contenedor de las imagenes de la pagina Place */
+.imgContent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/*Estilos de las imagenes del contenedor1 de la pagina Place*/
+.imgContent img {
+  height: 270px;
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/* Estilos del contenedor de las imagenes de la pagina Place */
+.imgContent2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/*Estilos de las imagenes del contenedor2 de la pagina Place*/
+.imgContent2 img {
+  width: 80%;
+  height: 270px;
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/* Estilos del contenedor de las imagenes de la pagina Place */
+.imgContent3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/*Estilos de las imagenes del contenedor3 de la pagina Place*/
+.imgContent3 img {
+  height: 270px;
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/* Estilos del contenedor de las imagenes de la pagina Place */
+.imgContent4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/*Estilos de las imagenes del contenedor4 de la pagina Place*/
+.imgContent4 img {
+  width: 80%;
+  height: 270px;
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/* Estilos del contenedor de las imagenes de la pagina Place */
+.imgContent5 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/*Estilos de las imagenes del contenedor5 de la pagina Place*/
+.imgContent5 img {
+  width: 80%;
+  height: 270px;
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/**********  History Page  **********/
+
+/**********  People Page  **********/
+
+/* Espaciado para que no se oculte el texto detras del menu de navegacion */
+.bodyPeople {
+  margin-top: 180px;
+  font-size: 1.2rem;
+}
+
+/* Estilos del Sub menu de navegacion de la pagina People */
+.menuPeople {
+  position: fixed;
+  top: 130px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: -30px;
+  border: none;
+  z-index: 10;
+}
+
+/* Estilos secciones de la pagina People*/
+.sectionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+/* Estilos de los titulos de la seccion de la pagina People*/
+.titleSection {
+  color: #7a0b0b;
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  text-decoration: overline underline #6401014f 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 20px 0;
+  font-family: "Principal", sans-serif;
+}
+
+/* Estilos de los subtitulos de la seccion de la pagina People*/
+.subTitleClan {
+  color: #7a0b0b;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: -20px;
+  font-family: "Principal", sans-serif;
+}
+
+/* Estilos de la imagen de la primera seccion de la pagina People*/
+.imgSects {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  margin: 20px 0;
+}
+
+/* Estilos de la imagen cada clan en la pagina People*/
+.imgClan {
+  width: 300px;
+  float: left;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+  margin: 20px 20px;
+}
+
+/* Estilos del los links del submenu de la pagina People*/
+a {
+  font-family: "Principal", sans-serif;
+}
+
+a:hover {
+  color: #7a0b0b;
+}
+
+/**********  About Page  **********/
+
+/* Estilos de la seccion de la pagina About*/
+.sectionAboutPage {
+  background: none;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+/* Estilos del contenedor de la pagina About*/
+.contentAboutPage {
+  position: sticky;
+  background-image: url("../images/about.jpg");
+  background-attachment: local;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 50px;
+}
+
+/* Estilos del titulo y links de referencias de la pagina About*/
+.references {
+  background: none;
+  color: #7a0b0b;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: "Principal", sans-serif;
+  text-shadow: 1px 1px 1px #ffffff2a, 2px 2px 1px #9999992a;
+}
+
+/* Estilos del texto del creador de la pagina*/
+.createdBy {
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 1rem;
+  background: none;
+}
+
+/* Estilos de links de la pagina About*/
+ul {
+  list-style: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  padding-left: 10px;
+  background: none;
+  margin-bottom: 10px;
+}
+
+.linkOutPage {
+  background: none;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #7a0b0b;
+  text-shadow: 1px 1px 1px #ffffff2a, 2px 2px 1px #29292980;
+}
+
+.linkOutPage:hover {
+  text-decoration: underline;
+  color: #0a0101;
+}
