@@ -203,6 +203,7 @@ main {
   line-height: 1.5rem;
   text-align: justify;
   padding-bottom: 20px;
+  z-index: 1;
 }
 
 /*Estilos de la imagen de la pagina Home*/
@@ -308,3 +309,191 @@ main {
     background-color: transparent;
   }
 }
+
+/***************Estilos de la pagina Home***************/
+
+/***************Estilos de la pagina Place***************/
+
+.sectionPlace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* gap: 20px; */
+}
+
+/*Contenedor de las imagenes pagina Place*/
+.imgPlaceBD {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+/*Estilos de las imagenes de la pagina Place*/
+.imgPlaceBD img {
+  height: 270px;
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/*Estilos de la etiqueta "a" de la pagina Place*/
+.linkTo {
+  text-decoration: none;
+  color: rgb(211, 0, 70);
+}
+
+/* Estilos del contenedor de las imagenes de la pagina Place */
+.imgContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  /* margin-bottom: 20px; */
+  gap: 20px;
+}
+
+/*Estilos de las imagenes del contenedor1 de la pagina Place*/
+.imgContent img {
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/* Estilos del contenedor de las imagenes de la pagina Place */
+.imgContent2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/*Estilos de las imagenes del contenedor2 de la pagina Place*/
+.imgContent2 img {
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/* Estilos del contenedor de las imagenes de la pagina Place */
+.imgContent3 {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/*Estilos de las imagenes del contenedor3 de la pagina Place*/
+.imgContent3 img {
+  height: 270px;
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/* Estilos del contenedor de las imagenes de la pagina Place */
+.imgContent4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: calc(80% - 40px);
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/*Estilos de las imagenes del contenedor4 de la pagina Place*/
+.imgContent4 img {
+  width: 80%;
+  height: 270px;
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+/* Estilos del contenedor de las imagenes de la pagina Place */
+.imgContent5 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/*Estilos de las imagenes del contenedor5 de la pagina Place*/
+.imgContent5 img {
+  width: 80%;
+  height: 270px;
+  border-radius: 5%;
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /*Contenedor de las imagenes pagina Place*/
+  .imgPlaceBD {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    /* height: 300px; */
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  /*Estilos de las imagenes de la pagina Place*/
+  .imgPlaceBD img {
+    /* height: 270px; */
+    border-radius: 5%;
+    margin: 20px 0;
+  }
+
+  /*Estilos de las imagenes del contenedor1 de la pagina Place*/
+  .imgContent img {
+    width: 80%;
+    height: calc(80% - 20px);
+    border-radius: 5%;
+    margin: 20px 0;
+  }
+
+  /*Estilos de las imagenes del contenedor2 de la pagina Place*/
+  .imgContent2 img {
+    width: 80%;
+    height: calc(80% - 40px);
+    border-radius: 5%;
+    margin: 20px 0;
+  }
+
+  /* Estilos del contenedor de las imagenes de la pagina Place */
+  .imgContent3 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    gap: 20px;
+  }
+
+  /*Estilos de las imagenes del contenedor3 de la pagina Place*/
+  .imgContent3 img {
+    width: 80%;
+    height: calc(80% - 40px);
+    border-radius: 5%;
+    margin: 20px 0;
+  }
+}
+
+/***************Estilos de la pagina History***************/
+
