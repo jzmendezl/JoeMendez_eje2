@@ -775,30 +775,14 @@ main {
 }
 
 /***************Estilos de la pagina About***************/
-body {
-  background-color: var(--bg-black);
-  background-image: url("../images/bg4.png");
-}
-
 .header {
   background: none;
 }
 
-/* Estilos de la seccion de la pagina About*/
-.sectionAboutPage {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 800px;
-  border-radius: 10px;
-}
-
 /* Estilos del contenedor de la pagina About*/
 .contentAboutPage {
-  height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding-left: 50px;
 }
 
 .contentAboutPage img {
@@ -809,18 +793,6 @@ body {
   object-position: center;
   border-radius: 10px;
   margin-bottom: 20px;
-  position: relative;
-  z-index: -1;
-}
-
-.bodyAbout {
-  position: absolute;
-  background: none;
-  z-index: 0;
-}
-
-* {
-  background: none;
 }
 
 /* Estilos del titulo y links de referencias de la pagina About */
