@@ -214,7 +214,7 @@ main {
 }
 
 /* Responsiveness */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
   .header {
     display: flex;
     flex-direction: row;
@@ -296,7 +296,7 @@ main {
     justify-content: space-between;
     gap: 30px;
   }
-  
+
   .topindexPage {
     display: flex;
     flex-direction: column;
@@ -312,6 +312,117 @@ main {
   /*Estilos de contenedor de la pagina Home columna Derecha*/
   .rightSection {
     background-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .header {    
+    width: 100vw;
+    height: max-content;
+    margin-bottom: calc(1.5rem + 5vw);
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    overflow: visible;
+  }
+
+  .logo {
+    text-align: center;
+    width: 100%;
+    font-size: calc(1.5rem + 2vw);
+    height: auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    overflow: visible;
+    padding-top: calc(1.5rem + .5vw);
+  }
+
+  .menu li {
+    float: left;
+    font-size: calc(1rem + .5vw);
+  }
+
+  .menu a:hover,
+  .subnav p:hover {
+    background-color: transparent;
+    color: var(--gray);
+  }
+
+  .hamb {
+    display: none;
+  }
+
+  .subnav-content {
+    padding: 20px 0;
+    display: none;
+    position: absolute;
+    width: calc(150px + 10vw);
+    left: calc(50% + 8vw);
+  }
+  .subnav-content a {
+    color: var(--white);
+  }
+
+  /*main*/
+  main {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 50px;
+    gap: 30px;
+  }
+
+  .topindexPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  
+  /*Estilos de la imagen de la pagina Home*/
+  .imgHeadIndex {
+    min-width: 500px;
+    width: calc(100% - 50px);
+    height: 100%;
+    margin-bottom: 50px;
+    object-fit: cover;
+    
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: calc(30px + 5vw);
+  }
+
+  /*Estilos de contenedor de la pagina Home columna Izquierda*/
+  .leftSection {
+    background-color: transparent;
+  }
+
+  /*Estilos de contenedor de la pagina Home columna Derecha*/
+  .rightSection {
+    background-color: transparent;
+  }
+
+  .txtContentPage {
+    font-size: calc(.5rem + 1vw);
+    line-height: calc(1rem + 1vw);
   }
 }
 
@@ -597,7 +708,8 @@ body {
 }
 
 /* Estilos del titulo y links de referencias de la pagina About */
-.references, .listRef {
+.references,
+.listRef {
   background: none;
   color: #7a0b0b;
   margin-bottom: 60px;
