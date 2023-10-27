@@ -202,7 +202,6 @@ main {
   line-height: 1.5rem;
   text-align: justify;
   padding-bottom: 20px;
-  /* z-index: 1; */
 }
 
 /*Estilos de la imagen de la pagina Home*/
@@ -321,10 +320,12 @@ main {
 
 @media only screen and (min-width: 1201px) {
   strong {
-    font-size: calc(.5rem + .6vw);
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    text-align: justify;
   }
 
-  .header {    
+  .header {
     width: 100vw;
     height: max-content;
     margin-bottom: calc(1.5rem + 5vw);
@@ -354,12 +355,12 @@ main {
     align-items: center;
     width: 80%;
     overflow: visible;
-    padding-top: calc(1.5rem + .5vw);
+    padding-top: calc(1.5rem + 0.5vw);
   }
 
   .menu li {
     float: left;
-    font-size: calc(1rem + .5vw);
+    font-size: calc(1rem + 0.5vw);
   }
 
   .menu a:hover,
@@ -400,7 +401,7 @@ main {
     width: 100%;
     margin-bottom: 5rem;
   }
-  
+
   /*Estilos de la imagen de la pagina Home*/
   .imgHeadIndex {
     min-width: 500px;
@@ -408,7 +409,6 @@ main {
     height: 100%;
     margin-bottom: 50px;
     object-fit: cover;
-    
   }
 
   .content {
@@ -428,12 +428,11 @@ main {
     background-color: transparent;
   }
 
-  .txtContentPage {
+  /* .txtContentPage {
     font-size: calc(.5rem + .6vw);
     line-height: calc(.5rem + 1vw);
-  }
+  } */
 }
-
 
 /***************Estilos de la pagina Place***************/
 
@@ -564,7 +563,6 @@ main {
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
-
   article {
     display: flex;
     flex-direction: column;
@@ -626,12 +624,22 @@ main {
 }
 
 @media only screen and (min-width: 1201px) {
+
   .artSectPlace {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     gap: 1.5vw;
+  }
+
+  .artSectPlace .imgPlaceBD {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .artSectPlace img {
@@ -657,11 +665,68 @@ main {
     justify-content: space-evenly;
     gap: 1.5vw;
   }
+
+  .artSectPlaceLeft .imgContent3 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    gap: 20px;
+  }
+
+  .artSectPlaceLeft .imgContent5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    min-width: 600px;
+    gap: 20px;
+  }
+
+  .artSectPlaceRigth .imgContent4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    min-width: 600px;
+    gap: 20px;
+  }
 }
 
 /***************Estilos de la pagina History ***************/
 
+.sectionHistory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: justify;
+}
 
+@media only screen and (min-width: 1201px) {
+  .sectionHistory {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 4vw;
+  }
+
+  .sectionHistory p {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .brHistory {
+    display: none;
+  }
+}
 
 /***************Estilos de la pagina People***************/
 
