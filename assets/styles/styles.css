@@ -455,6 +455,7 @@ main {
     /* height: 300px; */
     align-items: center;
     justify-content: space-evenly;
+    z-index: 0;
   }
 
   /*Estilos de las imagenes de la pagina Place*/
