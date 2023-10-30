@@ -26,7 +26,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* width: 100%; */
+  scrollbar-width: none; /*Firefox*/
+}
+*::-webkit-scrollbar {
+  width: 0;
 }
 
 body {
@@ -624,7 +627,6 @@ main {
 }
 
 @media only screen and (min-width: 1201px) {
-
   .artSectPlace {
     display: flex;
     flex-direction: row;
