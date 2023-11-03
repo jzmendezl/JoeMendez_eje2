@@ -831,3 +831,11 @@ main {
   text-decoration: underline;
   color: #0a0101;
 }
+
+section .navigationMap {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
