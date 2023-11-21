@@ -776,6 +776,51 @@ main {
   margin: 20px 20px;
 }
 
+/***************Estilos de la pagina Map***************/
+.contentMapPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.TitleMap {
+  color: #7a0b0b;
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  text-decoration: overline underline #6401014f 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Principal", sans-serif;
+}
+
+.divMap {
+  width: 90%;
+  height: 50%;
+}
+
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .TitleMap {
+    font-size: calc(1.5rem + 1vw);
+  }
+
+  .divMap {
+    width: 80%;
+    height: 30%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .contentMapPage {
+    margin-top: -100px;
+  }
+}
+
 /***************Estilos de la pagina About***************/
 .header {
   background: none;
